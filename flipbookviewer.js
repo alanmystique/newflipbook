@@ -1,1 +1,1 @@
-// Flipbook logic placeholder
+// Flipbook animations and logic placeholder
