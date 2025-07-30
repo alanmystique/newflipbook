@@ -1,5 +1,9 @@
 const urlParams = new URLSearchParams(window.location.search);
-const pdfUrl = urlParams.get('pdf') || 'pdfs/example.pdf';
+const urlParams = new URLSearchParams(window.location.search);
+const pdfUrl = urlParams.get('pdf') 
+  ? decodeURIComponent(urlParams.get('pdf')) 
+  : 'pdfs/example.pdf';
+
 
 let pdfDoc = null;
 let currentPage = 1;
